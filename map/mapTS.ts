@@ -27,3 +27,4 @@ const result = someArray.myMap((item, i, arr) => {
 })
 
 console.log('result is: ', result);
+
