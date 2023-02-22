@@ -5,7 +5,7 @@ Array.prototype.myMap = function (callback, thisArg) {
   }
 
   if (!Array.isArray(this)) {
-    throw new Error(`TypeError: ${this}.forEach is not a function`)
+    throw new Error(`TypeError: ${this}.map is not a function`)
   }
 
   if (typeof callback !== "function") {
@@ -36,4 +36,3 @@ const result = someArray.myMap((item, i, arr) => {
 })
 
 console.log('result is: ', result);
-
